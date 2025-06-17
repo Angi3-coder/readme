@@ -6,9 +6,6 @@ What your project is about, features of your project and importance of project.
     2.
     3.
 
-### Routes
-Explain different end points
-
 
 ## Prerequisties
 Before you install dependencies activate a virtual environment. run this in your terminal
@@ -30,6 +27,22 @@ cd client
 npm install
 ```
 
+
+## Set up database
+
+run
+```
+flask db init
+flask db migrate -m "Message"
+flask db upgrade
+```
+
+Seed your database by running
+```
+python3 seed.py
+```
+
+
 ## How to run app
 To start the server run the following in the server directory
 
@@ -41,3 +54,8 @@ To start the client run the following in the client directory/terminal
 ```
 npm start
 ```
+
+
+## Routes
+Explain different end points
+
